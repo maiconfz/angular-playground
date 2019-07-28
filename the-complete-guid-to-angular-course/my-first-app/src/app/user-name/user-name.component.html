@@ -1,1 +1,3 @@
-<p>user-name works!</p>
+<p><input type="text" name="username" [(ngModel)]="username"></p>
+<p>Hi {{username}}</p>
+<p><input type="button" value="Reset" (click)="reset()" [disabled]="!username || username.length == 0"></p> 
