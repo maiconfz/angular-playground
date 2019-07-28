@@ -1,3 +1,3 @@
-<p><input type="text" name="username" [(ngModel)]="username"></p>
+<input type="text" name="username" [(ngModel)]="username" class="form-control mb-3" placeholder="Input your username here" />
 <p>Hi {{username}}</p>
-<p><input type="button" value="Reset" (click)="reset()" [disabled]="!username || username.length == 0"></p> 
+<input class="btn btn-primary" type="button" value="Reset" (click)="reset()" [disabled]="!username || username.length == 0" />
