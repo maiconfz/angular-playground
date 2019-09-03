@@ -1,0 +1,10 @@
+ul.heroes {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.heroes li {
+    margin: 0 0 .5em 0;
+}
