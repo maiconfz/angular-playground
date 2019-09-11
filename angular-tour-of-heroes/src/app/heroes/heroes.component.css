@@ -1,15 +1,17 @@
 ul.heroes {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 ul.heroes li {
-    margin: 0 0 .2em 0;
-    padding: .3em;
+  margin: 0 0 .2em 0;
+  padding: .3em;
 }
 
-ul.heroes li:hover {
-    background-color: #F5F5F5;
+ul.heroes li:hover,
+ul.heroes li.selected {
+  background-color: #F5F5F5;
+  cursor: pointer;
 }
