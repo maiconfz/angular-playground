@@ -1,7 +1,6 @@
 <h2>My Heroes</h2>
 <div class="row">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let hero of heroes" (click)="onSelect(hero)"
-        [class.selected]="hero === selectedHero">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let hero of heroes" (click)="onSelect(hero)">
         <div class="input-group mb-2">
             <div class="input-group-prepend">
                 <div class="input-group-text">{{hero.id}}</div>
@@ -9,7 +8,7 @@
             <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"
                 value="{{hero.name}}" disabled>
             <div class="input-group-append">
-                <button class="btn btn-info">
+                <button class="btn" [class.btn-secondary]="!(hero === selectedHero)" [class.btn-info]="hero === selectedHero">
                     <fa-icon icon="eye"></fa-icon>
                 </button>
             </div>
