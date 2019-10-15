@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -40,6 +40,6 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faEye);
+    library.addIcons(faEye, faTrash);
   }
 }
