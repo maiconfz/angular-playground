@@ -15,3 +15,14 @@
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <h3>Add new Hero</h3>
+        <div class="input-group">
+            <input #heroName class="form-control" placeholder="Hero Name" />
+            <div class="input-group-append">
+                <button class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">add</button>
+            </div>
+        </div>
+    </div>
+</div>
